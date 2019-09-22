@@ -106,6 +106,112 @@
             ],
             "ori_table_name": "TABLE_1",
             "ori_comments": "資料表1描述"
+        },
+        "TABLE_2": {
+            "owner": "OWNER",
+            "table_name": "TABLE_2",
+            "table_type": "TABLE",
+            "comments": "資料表2描述",
+            "columns": [
+              {
+                "table_name": "TABLE_2",
+                "column_name": "COLUMN_1",
+                "data_type": "VARCHAR2",
+                "data_length": "36",
+                "data_precision": "",
+                "comments": "欄位1描述",
+                "nullable": "N",
+                "constraint_type": [
+                  "P"
+                ],
+                "owner": "OWNER",
+                "data_default": "",
+                "column_id": "1",
+                "ori_comments": "primary key"
+              },
+              {
+                "table_name": "TABLE_2",
+                "column_name": "COLUMN_2",
+                "data_type": "VARCHAR2",
+                "data_length": "20",
+                "data_precision": "",
+                "comments": "欄位2描述",
+                "nullable": "Y",
+                "constraint_type": [
+                  ""
+                ],
+                "owner": "OWNER",
+                "data_default": "",
+                "column_id": "2",
+                "ori_comments": "欄位2描述"
+              },
+              {
+                "table_name": "TABLE_2",
+                "column_name": "COLUMN_3",
+                "data_type": "DATE",
+                "data_length": "7",
+                "data_precision": "",
+                "comments": "欄位3描述",
+                "nullable": "Y",
+                "constraint_type": [
+                  ""
+                ],
+                "owner": "OWNER",
+                "data_default": "",
+                "column_id": "3",
+                "ori_comments": "欄位3描述"
+              },
+              {
+                "table_name": "TABLE_2",
+                "column_name": "COLUMN_4",
+                "data_type": "DATE",
+                "data_length": "7",
+                "data_precision": "",
+                "comments": "欄位4描述",
+                "nullable": "Y",
+                "constraint_type": [
+                  ""
+                ],
+                "owner": "OWNER",
+                "data_default": "",
+                "column_id": "4",
+                "ori_comments": "欄位4描述"
+              },
+              {
+                "table_name": "TABLE_2",
+                "column_name": "COLUMN_5",
+                "data_type": "DATE",
+                "data_length": "7",
+                "data_precision": "",
+                "comments": "欄位5描述",
+                "nullable": "Y",
+                "constraint_type": [
+                  ""
+                ],
+                "owner": "OWNER",
+                "data_default": "",
+                "column_id": "5",
+                "ori_comments": "欄位5描述"
+              },
+              {
+                "table_name": "TABLE_2",
+                "column_name": "COLUMN_6",
+                "data_type": "NUMBER",
+                "data_length": "22",
+                "data_precision": "9",
+                "comments": "欄位6描述",
+                "nullable": "Y",
+                "constraint_type": [
+                  ""
+                ],
+                "owner": "OWNER",
+                "data_default": "",
+                "column_id": "6",
+                "ori_comments": "欄位6描述"
+              }
+            ],
+            "ori_table_name": "TABLE_2",
+            "ori_comments": "資料表2描述"
         }
     },
     "hash": "08ad61d1afd6c704c16bf5445671cfcb"
