@@ -11,7 +11,7 @@ export const getFileHashApi = () => {
     return instance({
         // url: 'http://localhost:3000/check-data',
         url: ' https://my-json-server.typicode.com/jh6120v/programmer-tools/check-data',
-        method: 'get',
+        // method: 'get',
         responseType: 'json',
         headers: {
             'X-Requested-With': 'XMLHttpRequest',

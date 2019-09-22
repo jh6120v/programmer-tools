@@ -98,15 +98,3 @@ export const useFixedListTools = () => {
 
     return { select, remove };
 };
-
-export const useIsSubTabShow = () => {
-    const { content } = useSelector((state) => ({
-        content: state.content
-    }));
-
-    const isTabShow = useCallback((contentName) => ({
-        display: content.selected.subTabShow[contentName] === true ? 'block' : 'none'
-    }), [content.selected.subTabShow]);
-
-    return { isTabShow };
-};
