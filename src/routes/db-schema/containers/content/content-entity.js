@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { useIsSubTabShow } from '../../commons/hooks';
 import { updateSelected } from '../../modules/content';
 
 const ContentEntity = () => {
@@ -81,10 +80,9 @@ ${iden}}
     };
 
     const { onChange } = useChangeEntityPK();
-    const { isTabShow } = useIsSubTabShow();
 
     return (
-        <div className="col-12 selected-table-entity" style={isTabShow('entity')}>
+        <div className="col-12 selected-table-entity">
             <div className="form-inline">
                 <select className="form-control col-2 mr-sm-2" onChange={onChange}>
                     <option value="">請選擇 Primary key</option>

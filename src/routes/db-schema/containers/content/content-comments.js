@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateSelected } from '../../modules/content';
-import { useIsSubTabShow } from '../../commons/hooks';
 
 const ContentComments = () => {
     const useChangeTableComments = () => {
@@ -26,10 +25,9 @@ const ContentComments = () => {
     };
 
     const { value, onChange } = useChangeTableComments();
-    const { isTabShow } = useIsSubTabShow();
 
     return (
-        <div className="col-12 selected-table-comments" style={isTabShow('comments')}>
+        <div className="col-12 selected-table-comments">
             <textarea className="col-12" value={value} onChange={onChange} />
         </div>
     );

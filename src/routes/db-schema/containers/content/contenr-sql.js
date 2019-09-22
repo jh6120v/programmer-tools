@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { useIsSubTabShow } from '../../commons/hooks';
 
 const ContentSql = () => {
     const [copied, setCopied] = useState(false);
@@ -35,10 +34,8 @@ const ContentSql = () => {
         return def;
     }, [content]);
 
-    const { isTabShow } = useIsSubTabShow();
-
     return (
-        <div className="col-12 selected-table-columns" style={isTabShow('columns')}>
+        <div className="col-12 selected-table-columns">
             <CopyToClipboard onCopy={onCopy} text={genSql()}>
                 <input type="button" className="btn btn-secondary mr-sm-2" value="複製" />
             </CopyToClipboard>
