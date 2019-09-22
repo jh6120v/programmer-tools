@@ -1,3 +1,5 @@
+![image](https://github.com/jh6120v/programmer-tools/blob/master/cover.png)
+
 # Programmer tools
 A React + Redux Application for programmers
 
