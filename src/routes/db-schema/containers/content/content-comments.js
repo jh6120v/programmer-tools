@@ -26,10 +26,10 @@ const ContentComments = () => {
     };
 
     const { value, onChange } = useChangeTableComments();
-    const { isTabShow } = useIsSubTabShow('comments');
+    const { isTabShow } = useIsSubTabShow();
 
     return (
-        <div className="col-12 selected-table-comments" style={isTabShow()}>
+        <div className="col-12 selected-table-comments" style={isTabShow('comments')}>
             <textarea className="col-12" value={value} onChange={onChange} />
         </div>
     );

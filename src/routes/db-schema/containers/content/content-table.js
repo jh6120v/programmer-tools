@@ -16,10 +16,10 @@ const ContentTable = () => {
             selected: content.selected
         }));
     };
-    const { isTabShow } = useIsSubTabShow('content');
+    const { isTabShow } = useIsSubTabShow();
 
     return (
-        <div className="col-12 selected-table-content" style={isTabShow()}>
+        <div className="col-12 selected-table-content" style={isTabShow('content')}>
             <table className="table table-striped table-hover table-lg">
                 <thead>
                     <tr>

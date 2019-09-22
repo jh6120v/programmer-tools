@@ -81,10 +81,10 @@ ${iden}}
     };
 
     const { onChange } = useChangeEntityPK();
-    const { isTabShow } = useIsSubTabShow('entity');
+    const { isTabShow } = useIsSubTabShow();
 
     return (
-        <div className="col-12 selected-table-entity" style={isTabShow()}>
+        <div className="col-12 selected-table-entity" style={isTabShow('entity')}>
             <div className="form-inline">
                 <select className="form-control col-2 mr-sm-2" onChange={onChange}>
                     <option value="">請選擇 Primary key</option>

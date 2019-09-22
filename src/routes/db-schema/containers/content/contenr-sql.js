@@ -35,10 +35,10 @@ const ContentSql = () => {
         return def;
     }, [content]);
 
-    const { isTabShow } = useIsSubTabShow('columns');
+    const { isTabShow } = useIsSubTabShow();
 
     return (
-        <div className="col-12 selected-table-columns" style={isTabShow()}>
+        <div className="col-12 selected-table-columns" style={isTabShow('columns')}>
             <CopyToClipboard onCopy={onCopy} text={genSql()}>
                 <input type="button" className="btn btn-secondary mr-sm-2" value="複製" />
             </CopyToClipboard>
