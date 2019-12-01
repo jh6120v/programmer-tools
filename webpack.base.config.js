@@ -2,7 +2,6 @@ const path = require('path');
 
 // 這邊使用 HtmlWebpackPlugin，將 bundle 好的 <script> 插入到 body。${__dirname} 為 ES6 語法對應到 __dirname
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -12,7 +11,7 @@ module.exports = {
     ],
     // output 是放入產生出來的結果的相關參數
     output: {
-        path: `${__dirname}/docs`,
+        path: `${__dirname}/dist`,
         filename: 'assets/js/bundle.[hash].js',
         publicPath: '/'
     },
@@ -78,12 +77,8 @@ module.exports = {
     },
     // plugins 放置所使用的外掛
     plugins: [
-        new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: [`${__dirname}/docs`],
-            verbose: true,
-        }),
         new HtmlWebpackPlugin({
-            template: `${__dirname}/index.html`,
+            template: `${__dirname}/src/index.html`,
             filename: 'index.html',
             inject: 'body'
         }),
