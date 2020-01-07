@@ -5,7 +5,6 @@ A React + Redux Application for programmers
 
 # Demo
 - https://programmer-tools.firebaseapp.com
-- https://programmer-tools.dailyofjames.com/
 
 # Functions
 - DB schema
